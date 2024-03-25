@@ -28,7 +28,7 @@ export default function Home() {
           </h2>
           <div className={myFont2.className}>
             <p className="mt-5 text-justify">
-              Bird Dog, the enigmatic 5th member of the "Boy's Club" and Matt
+            {`Bird Dog, the enigmatic 5th member of the "Boy's Club" and Matt
               Furie's favored creation, stands as a testament to the comic's
               rich tapestry of humor and absurdity. With his unpredictable
               antics and mysterious aura, Bird Dog adds a layer of intrigue and
@@ -36,7 +36,7 @@ export default function Home() {
               slacker lifestyle and psychedelic escapades. His presence enriches
               the dynamic interplay among the characters, offering a fresh lens
               through which to explore the themes of friendship, adventure, and
-              the surreal aspects of everyday life.
+              the surreal aspects of everyday life.`}
             </p>
           </div>
         </div>
