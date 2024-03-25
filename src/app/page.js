@@ -2,7 +2,11 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import bdImage from "./files/BD_C.png";
+import partner1 from "./assets/partner_1.svg";
+import partner2 from "./assets/partner_2.svg";
+import gif1 from "./assets/circle.gif";
 import localFont2 from "next/font/local";
+import ClipboardCopyComponent from "./components/clipboard";
 // import { Tweet } from "react-tweet";
 
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
@@ -47,6 +51,20 @@ export default function Home() {
           className="react-player"
         />
       </div>
+
+      <div className="px-32 mt-5 mb-20">
+        {/* Container to control width */}
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-5xl text-center">
+            OUR <span className="text-yellow-400">PARTNERS</span>
+          </h2>
+          <div className="mt-5 flex justify-center gap-5">
+            <Image src={partner1} alt="partner 1" priority />
+            <Image src={partner2} alt="partner 2" priority />
+          </div>
+        </div>
+      </div>
+
       <div className="px-32 mt-5 mb-20">
         {/* Container to control width */}
         <div className="max-w-2xl mx-auto">
@@ -55,9 +73,33 @@ export default function Home() {
           </h2>
           <div className={myFont2.className}>
             <p className="mt-5 text-justify">
-            The $BIRDDOG token, emerging resiliently from the shadows of a developer rug pull, has been fervently embraced by its community, now driving its trajectory with unwavering commitment and vision. This digital asset, now entirely in the hands of its dedicated holders, symbolizes the power of collective belief and action, showcasing a remarkable turnaround to become 100% community-led and thriving against all odds. Through collaborative effort and shared governance, the $BIRDDOG community exemplifies the strength and potential of decentralized finance when united by a common purpose and trust.
+              The $BIRDDOG token, emerging resiliently from the shadows of a
+              developer rug pull, has been fervently embraced by its community,
+              now driving its trajectory with unwavering commitment and vision.
+              This digital asset, now entirely in the hands of its dedicated
+              holders, symbolizes the power of collective belief and action,
+              showcasing a remarkable turnaround to become 100% community-led
+              and thriving against all odds. Through collaborative effort and
+              shared governance, the $BIRDDOG community exemplifies the strength
+              and potential of decentralized finance when united by a common
+              purpose and trust.
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="px-32 mt-5 mb-20 justify-center">
+        <div className="justify-center mb-5">
+          <Image
+            src={gif1}
+            alt="Bird Dog logo"
+            width={300}
+            height={300}
+            priority
+          />
+        </div>
+        <div className={myFont2.className}>
+          <ClipboardCopyComponent />
         </div>
       </div>
     </main>
