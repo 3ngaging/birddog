@@ -6,7 +6,7 @@ import Image from "next/image";
 import tgImg from "../assets/tg_yellow.svg";
 import xImg from "../assets/x_yellow.svg";
 import { Transition } from "@headlessui/react";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,9 +66,9 @@ const Nav = () => {
                 <Image src={xImg} alt="x logo" priority height={32} width={32} />
               </a>
 
-              <button className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl">
+              <a href="https://jup.ag/swap/SOL-BIRDDOG_3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP" className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl">
                 BUY NOW
-              </button>
+              </a>
           </div>
         </div>
 
@@ -177,9 +177,9 @@ const Nav = () => {
               <Image src={xImg} alt="x logo" priority height={32} width={32} />
             </a>
 
-            <button className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl">
+            <a href="https://jup.ag/swap/SOL-BIRDDOG_3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP" className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl">
               BUY NOW
-            </button>
+            </a>
           </div>
         </div>
       </div>
