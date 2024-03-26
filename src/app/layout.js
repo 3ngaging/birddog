@@ -1,6 +1,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import Nav from "./components/nav";
+import Footer from "./components/footer";
 import Head from "next/head";
 
 const myFont = localFont({ src: "./files/Insanibu.ttf" });
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className={myFont.className}>
         <Nav />
         {children}
+        <Footer/>
       </body>
     </html>
   );
