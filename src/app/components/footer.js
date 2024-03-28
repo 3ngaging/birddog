@@ -14,6 +14,7 @@ const Footer = () => {
           <a
             href="https://t.me/birddogentry"
             className="text-white hover:text-gray-400 hover:opacity-75"
+            target="_blank"
           >
             <Image
               src={tgImg}
@@ -28,6 +29,7 @@ const Footer = () => {
           <a
             href="https://twitter.com/SOLbirddog"
             className="text-white hover:text-gray-400 hover:opacity-75"
+            target="_blank"
           >
             <Image
               src={xImg}
@@ -55,7 +57,7 @@ const Footer = () => {
       <footer className="bg-yellow-400 p-4">
         <div className="container mx-auto text-center">
           <p>© 2024 BIRDDOG COMMUNITY. All rights reserved.</p>
-          <p className={myFont2.className}>Powered by <a className="underline hover:text-orange-500" href="https://twitter.com/3ngaging">@3ngaging</a>. Developer.</p>
+          <p className={myFont2.className}>Powered by <a className="underline hover:text-orange-500" href="https://twitter.com/3ngaging" target="_blank">@3ngaging</a>. Developer.</p>
         </div>
       </footer>
     </>
