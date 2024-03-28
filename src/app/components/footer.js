@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex items-center justify-center sm:justify-start gap-5">
           <a
             href="https://t.me/birddogentry"
-            className="text-white hover:text-gray-400"
+            className="text-white hover:text-gray-400 hover:opacity-75"
           >
             <Image
               src={tgImg}
@@ -24,7 +24,7 @@ const Footer = () => {
           </a>
           <a
             href="https://twitter.com/SOLbirddog"
-            className="text-white hover:text-gray-400"
+            className="text-white hover:text-gray-400 hover:opacity-75"
           >
             <Image
               src={xImg}
