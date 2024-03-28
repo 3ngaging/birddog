@@ -2,6 +2,9 @@ import gif1 from "../assets/hero.gif";
 import tgImg from "../files/telegram.svg";
 import xImg from "../files/square-x-twitter.svg";
 import Image from "next/image";
+import localFont2 from "next/font/local";
+
+const myFont2 = localFont2({ src: "../files/ComicNeue-Bold.ttf" });
 
 const Footer = () => {
   return (
@@ -52,6 +55,7 @@ const Footer = () => {
       <footer className="bg-yellow-400 p-4">
         <div className="container mx-auto text-center">
           <p>© 2024 BIRDDOG COMMUNITY. All rights reserved.</p>
+          <p className={myFont2.className}>Powered by <a className="underline hover:text-orange-500" href="https://twitter.com/3ngaging">@3ngaging</a>. Developer.</p>
         </div>
       </footer>
     </>

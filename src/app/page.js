@@ -43,9 +43,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="lg:mb-20 md:mb-12 w-full flex justify-center">
-        <iframe src="https://www.google.es/books/edition/Boy_s_Club/WRYyDAAAQBAJ?hl=es&gbpv=1&pg=PP1&printsec=frontcover" frameborder="0" allowfullscreen/>
-      </div>
       {/* <Image src={Video} alt="Bird Dog logo" priority /> */}
       {/* <VideoPlayer url={Video}/> */}
       <div className="lg:mb-20 md:mb-12 w-full flex justify-center">

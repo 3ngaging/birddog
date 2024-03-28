@@ -23,52 +23,59 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-orange-500 p-4 sticky top-0 z-50">
-      <div className="mx-auto flex items-center">
+    <nav className="bg-orange-500 sticky top-0 p-5">
+      <div className="">
         {/* Burger Icon */}
-        <div className="md:hidden flex items-center">
-          <div className="">
-            <div className="flex items-center space-x-4">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="outline-none mobile-menu-button"
+        <div className="md:hidden flex justify-between">
+          <div className="flex items-center">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="outline-none mobile-menu-button"
+            >
+              <svg
+                className="w-6 h-6 text-white"
+                x-show="!showMenu"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <svg
-                  className="w-6 h-6 text-white"
-                  x-show="!showMenu"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-              </button>
-            </div>
+                <path d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
           </div>
-          
-          <div className="mx-auto flex justify-end items-center space-x-4">
-              <a href="https://t.me/birddogentry" className="hover:opacity-75">
-                <Image
-                  src={tgImg}
-                  alt="telegram logo"
-                  priority
-                  height={32}
-                  width={32}
-                />
-              </a>
-              <a
-                href="https://twitter.com/SOLbirddog"
-                className="hover:opacity-75"
-              >
-                <Image src={xImg} alt="x logo" priority height={32} width={32} />
-              </a>
 
-              <a href="https://jup.ag/swap/SOL-BIRDDOG_3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP" className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl">
-                BUY NOW
-              </a>
+          <div className="flex justify-end items-center space-x-4">
+            <a
+              href="https://t.me/birddogentry"
+              className="hover:opacity-75"
+              target="_blank"
+            >
+              <Image
+                src={tgImg}
+                alt="telegram logo"
+                priority
+                height={32}
+                width={32}
+              />
+            </a>
+            <a
+              href="https://twitter.com/SOLbirddog"
+              className="hover:opacity-75"
+              target="_blank"
+            >
+              <Image src={xImg} alt="x logo" priority height={32} width={32} />
+            </a>
+
+            <a
+              href="https://jup.ag/swap/SOL-BIRDDOG_3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP"
+              className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl"
+              target="_blank"
+            >
+              BUY NOW
+            </a>
           </div>
         </div>
 
@@ -140,7 +147,11 @@ const Nav = () => {
             <li>
               <Link
                 href="/"
-                className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl"
+                className={
+                  isActive("/")
+                    ? "border-2 border-white hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl"
+                    : "hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl"
+                }
               >
                 Home
               </Link>
@@ -148,7 +159,11 @@ const Nav = () => {
             <li>
               <Link
                 href="/meme-generator"
-                className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl"
+                className={
+                  isActive("/meme-generator")
+                    ? "border-2 border-white hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl"
+                    : "hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl"
+                }
               >
                 Meme Generator
               </Link>
@@ -161,7 +176,11 @@ const Nav = () => {
           </ul>
 
           <div className="flex items-center space-x-4">
-            <a href="https://t.me/birddogentry" className="hover:opacity-75">
+            <a
+              href="https://t.me/birddogentry"
+              className="hover:opacity-75"
+              target="_blank"
+            >
               <Image
                 src={tgImg}
                 alt="telegram logo"
@@ -173,11 +192,16 @@ const Nav = () => {
             <a
               href="https://twitter.com/SOLbirddog"
               className="hover:opacity-75"
+              target="_blank"
             >
               <Image src={xImg} alt="x logo" priority height={32} width={32} />
             </a>
 
-            <a href="https://jup.ag/swap/SOL-BIRDDOG_3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP" className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl">
+            <a
+              href="https://jup.ag/swap/SOL-BIRDDOG_3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP"
+              className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl"
+              target="_blank"
+            >
               BUY NOW
             </a>
           </div>
