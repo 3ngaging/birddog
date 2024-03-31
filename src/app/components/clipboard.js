@@ -24,7 +24,7 @@ export default function ClipboardCopyComponent() {
           ref={inputRef}
           id="npm-install-copy-button"
           type="text"
-          className="text-center col-span-6 border-4 border-yellow-400 text-white text-md rounded-3xl focus:ring-yellow-500 focus:border-blue-500 block w-full p-2.5 dark:bg-amber-500  dark:placeholder-white"
+          className="text-center col-span-6 border-4 border-yellow-400 text-white text-md rounded-3xl focus:ring-yellow-500 focus:border-blue-500 block w-full p-2.5 bg-amber-500  placeholder-white"
           value="3XTp12PmKMH...gJuVTsBCoP"
           disabled
           readOnly
@@ -37,7 +37,7 @@ export default function ClipboardCopyComponent() {
             <span className="inline-flex items-center">
               {/* Success Icon */}
               <svg
-                className="w-3.5 h-3.5 text-green-500 dark:text-green-400"
+                className="w-3.5 h-3.5 text-green-500 text-green-400"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -70,7 +70,7 @@ export default function ClipboardCopyComponent() {
         <div
           className={`absolute z-10 ${
             copySuccess ? "visible opacity-100" : "invisible opacity-0"
-          } inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm tooltip dark:bg-gray-700`}
+          } inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm tooltip bg-gray-700`}
         >
           {copySuccess ? "Copied!" : "Copy to clipboard"}
           <div className="tooltip-arrow" data-popper-arrow></div>

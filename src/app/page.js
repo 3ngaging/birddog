@@ -134,7 +134,7 @@ export default function Home() {
               </p>
             </div>
             <a
-              className="inline-block border-4 border-yellow-400 text-white text-md rounded-3xl focus:ring-yellow-500 dark:bg-amber-500 p-2 hover:bg-yellow-700 hover:text-gray-200"
+              className="inline-block border-4 border-yellow-400 text-white text-md rounded-3xl focus:ring-yellow-500 bg-amber-500 p-2 hover:bg-yellow-700 hover:text-gray-200"
               href="https://t.me/birddogentry"
             >
               join the community
