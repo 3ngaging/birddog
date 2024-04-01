@@ -56,7 +56,7 @@ const Footer = () => {
       </div>
       <footer className="bg-stone-950 p-4">
         <div className="container mx-auto text-center">
-          <p>© 2024 BIRDDOG COMMUNITY. All rights reserved.</p>
+          <p className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">© 2024 BIRDDOG COMMUNITY. All rights reserved.</p>
           <p className={myFont2.className}>Website powered by <a className="underline hover:text-purple-500" href="https://twitter.com/3ngaging" target="_blank">@3ngaging</a> Developer.</p>
         </div>
       </footer>
