@@ -1,7 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import bdImage from "./assets/bd_c.svg";
+import bdImage from "./assets/birddog_character_bgSol.png";
 import partner1 from "./assets/partner_1.svg";
 import partner2 from "./assets/partner_2.svg";
 import gif1 from "./assets/circle.gif";
@@ -9,6 +9,7 @@ import maps from "./assets/maps.svg";
 import text_bird from "./assets/BIRD DOG.svg";
 import localFont2 from "next/font/local";
 import ClipboardCopyComponent from "./components/clipboard";
+import drawImg from "./assets/draw.jpg";
 // import { Tweet } from "react-tweet";
 
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
@@ -16,19 +17,19 @@ const myFont2 = localFont2({ src: "./files/ComicNeue-Bold.ttf" });
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-5 bg-orange-500">
-      <div className="mt-12 mb-10">
+    <main className="flex min-h-screen flex-col items-center justify-between px-5 bg-black">
+      <div className="mt-12">
         <Image src={text_bird} alt="Bird Dog text" priority />
       </div>
       <Image src={bdImage} alt="Bird Dog logo" priority />
-      <div className="lg:px-32 sx:px-5 mt-10 lg:mb-20 md:mb-12">
+      <div className="lg:px-32 sx:px-5 mt-10 mb-5">
         {/* Container to control width */}
         <div className="max-w-2xl mx-auto">
           <h2 className="text-5xl text-center">
-            Matt Furie’s <span className="text-yellow-400">favourite</span>{" "}
+            Matt Furie’s <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">5<span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent text-sm align-[top]">th</span> OG </span>{" "}
             character
           </h2>
-          <div className={myFont2.className}>
+          {/* <div className={myFont2.className}>
             <p className="mt-5 text-justify">
               {`Bird Dog, the enigmatic 5th member of the "Boy's Club" and Matt
               Furie's favored creation, stands as a testament to the comic's
@@ -40,23 +41,21 @@ export default function Home() {
               through which to explore the themes of friendship, adventure, and
               the surreal aspects of everyday life.`}
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <Image src={Video} alt="Bird Dog logo" priority /> */}
       {/* <VideoPlayer url={Video}/> */}
-      <div className="lg:mb-20 md:mb-12 w-full flex justify-center">
-        <ReactPlayer
-          url="https://vimeo.com/927249912"
-          controls
-          className="react-player"
-        />
+      <div className="flex flex-wrap justify-center gap-5 mb-12">
+        <Image className="shadow-2xl shadow-purple-800" src={drawImg} alt="Bird Dog draw" 
+                width={650}
+                height={650} priority />
       </div>
       <div className="px-4 sm:px-10 lg:px-32 mt-5 lg:mb-20 md:mb-12">
         {/* Container to control width */}
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl text-center">
-            OUR <span className="text-yellow-400">PARTNERS</span>
+            OUR <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">PARTNERS</span>
           </h2>
           <div className="mt-5 flex flex-wrap justify-center gap-5">
             <div className="w-1/2 sm:w-auto">
@@ -87,7 +86,7 @@ export default function Home() {
         {/* Container to control width */}
         <div className="max-w-2xl mx-auto">
           <h2 className="text-5xl text-center">
-            Community Driven <span className="text-yellow-400">$birddog</span>
+            Community Driven <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">$birddog</span>
           </h2>
           <div className={myFont2.className}>
             <p className="mt-5 text-justify">
@@ -134,7 +133,7 @@ export default function Home() {
               </p>
             </div>
             <a
-              className="inline-block border-4 border-yellow-400 text-white text-md rounded-3xl focus:ring-yellow-500 bg-amber-500 p-2 hover:bg-yellow-700 hover:text-gray-200"
+              className="inline-block bg-gradient-to-r from-purple-500 to-teal-400 hover:opacity-75 p-2 px-5 border-4 border-white rounded-3xl text-md"
               href="https://t.me/birddogentry"
             >
               join the community

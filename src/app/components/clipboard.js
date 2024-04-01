@@ -24,14 +24,14 @@ export default function ClipboardCopyComponent() {
           ref={inputRef}
           id="npm-install-copy-button"
           type="text"
-          className="text-center col-span-6 border-4 border-yellow-400 text-white text-md rounded-3xl focus:ring-yellow-500 focus:border-blue-500 block w-full p-2.5 bg-amber-500  placeholder-white"
+          className="text-center col-span-6 border-4 bg-gradient-to-r from-purple-500 to-teal-400 text-white text-md rounded-3xl  block w-full p-2.5  placeholder-white"
           value="3XTp12PmKMH...gJuVTsBCoP"
           disabled
           readOnly
         />
         <button
           onClick={handleCopyClick}
-          className="absolute end-2 top-1/2 -translate-y-1/2 text-white hover:bg-gray-100 hover:bg-yellow-800 rounded-2xl p-2 inline-flex items-center justify-center"
+          className="absolute end-2 top-1/2 -translate-y-1/2 text-white hover:bg-gray-100 hover:bg-purple-800 rounded-2xl p-2 inline-flex items-center justify-center"
         >
           {copySuccess ? (
             <span className="inline-flex items-center">

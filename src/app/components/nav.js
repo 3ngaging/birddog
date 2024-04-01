@@ -3,10 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import tgImg from "../assets/tg_yellow.svg";
-import xImg from "../assets/x_yellow.svg";
 import { Transition } from "@headlessui/react";
 import { usePathname } from "next/navigation";
+import tgImg from "../files/telegram.svg";
+import xImg from "../files/square-x-twitter.svg";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-orange-500 sticky top-0 p-5">
+    <nav className="bg-stone-950 sticky top-0 p-5">
       <div className="">
         {/* Burger Icon */}
         <div className="md:hidden flex justify-between">
@@ -59,6 +59,7 @@ const Nav = () => {
                 priority
                 height={32}
                 width={32}
+                className="" 
               />
             </a>
             <a
@@ -66,12 +67,12 @@ const Nav = () => {
               className="hover:opacity-75"
               target="_blank"
             >
-              <Image src={xImg} alt="x logo" priority height={32} width={32} />
+              <Image src={xImg} className="" alt="x logo" priority height={32} width={32} />
             </a>
 
             <a
               href="https://jup.ag/swap/SOL-BIRDDOG_3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP"
-              className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl"
+              className="bg-gradient-to-r from-purple-500 to-teal-400 hover:opacity-75 p-2 px-5 border-4 border-white rounded-3xl text-xl"
               target="_blank"
             >
               BUY NOW
@@ -82,7 +83,7 @@ const Nav = () => {
         {/* Mobile Menu */}
         <Transition
           show={isOpen}
-          enter="transition ease-out duration-100 transform"
+          enter="transition ease-out duration-200 transform"
           enterFrom="opacity-0 scale-95"
           enterTo="opacity-100 scale-100"
           leave="transition ease-in duration-75 transform"
@@ -91,7 +92,7 @@ const Nav = () => {
         >
           {(ref) => (
             <div
-              className="fixed top-0 left-0 h-full w-full z-40 bg-orange-600 md:hidden"
+              className="fixed top-0 left-0 h-full w-full z-50 bg-stone-950 md:hidden"
               id="mobile-menu"
             >
               {/* Close Button */}
@@ -105,12 +106,12 @@ const Nav = () => {
               <div className="flex h-full items-center justify-center text-center">
                 <ul className="space-y-6">
                   <li
-                    className={isActive("/") ? "bg-yellow-500 rounded-3xl" : ""}
+                    className={isActive("/") ? "bg-white text-black rounded-3xl" : "text-white"}
                   >
                     <Link
                       onClick={handleLinkClick}
                       href="/"
-                      className="block text-lg px-2 py-4 text-white hover:bg-yellow-500 font-semibold rounded-3xl"
+                      className="block text-lg px-2 py-4 hover:bg-white hover:text-black font-semibold rounded-3xl"
                     >
                       Home
                     </Link>
@@ -118,20 +119,20 @@ const Nav = () => {
                   <li
                     className={
                       isActive("/meme-generator")
-                        ? "bg-yellow-500 rounded-3xl"
+                        ? "bg-white text-black rounded-3xl text-white"
                         : ""
                     }
                   >
                     <Link
                       onClick={handleLinkClick}
                       href="/meme-generator"
-                      className="block text-lg px-2 py-4 text-white hover:bg-yellow-500 transition duration-300 rounded-3xl"
+                      className="block text-lg px-2 py-4 hover:bg-white hover:text-black transition duration-300 rounded-3xl"
                     >
                       Meme Generator
                     </Link>
                   </li>
                   <li>
-                    <span className="block text-lg px-2 py-4 text-yellow-800 cursor-not-allowed rounded-3xl">
+                    <span className="block text-lg px-2 py-4 text-gray-600 cursor-not-allowed rounded-3xl">
                       Coming Soon...
                     </span>
                   </li>
@@ -149,8 +150,8 @@ const Nav = () => {
                 href="/"
                 className={
                   isActive("/")
-                    ? "border-2 border-white hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl"
-                    : "hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl"
+                    ? "hover:border-2 hover:border-white hover:text-white border-2 border-black text-black bg-white hover:bg-black p-2 px-5 rounded-3xl"
+                    : "hover:text-black hover:bg-white p-2 px-5 rounded-3xl"
                 }
               >
                 Home
@@ -161,15 +162,15 @@ const Nav = () => {
                 href="/meme-generator"
                 className={
                   isActive("/meme-generator")
-                    ? "border-2 border-white hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl"
-                    : "hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl"
+                    ? "hover:border-2 hover:border-white hover:text-white border-2 border-black text-black bg-white hover:bg-black p-2 px-5 rounded-3xl"
+                    : "hover:text-black hover:bg-white p-2 px-5 rounded-3xl"
                 }
               >
                 Meme Generator
               </Link>
             </li>
             <li>
-              <span className="cursor-not-allowed text-yellow-800 bg-orange-400 p-2 px-5 rounded-3xl">
+              <span className="cursor-not-allowed text-gray-700 p-2 px-5 rounded-3xl">
                 Coming Soon...
               </span>
             </li>
@@ -187,6 +188,7 @@ const Nav = () => {
                 priority
                 height={32}
                 width={32}
+                className="" 
               />
             </a>
             <a
@@ -194,12 +196,12 @@ const Nav = () => {
               className="hover:opacity-75"
               target="_blank"
             >
-              <Image src={xImg} alt="x logo" priority height={32} width={32} />
+              <Image src={xImg} className="" alt="x logo" priority height={32} width={32} />
             </a>
 
             <a
               href="https://jup.ag/swap/SOL-BIRDDOG_3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP"
-              className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl"
+              className="bg-gradient-to-r from-purple-500 to-teal-400 hover:opacity-75 p-2 px-5 rounded-3xl border-4 border-white text-xl"
               target="_blank"
             >
               BUY NOW

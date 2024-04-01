@@ -47,14 +47,14 @@ const MemeGeneratorComponent = () => {
           <img
             src={currentMeme}
             alt="Meme"
-            className="w-auto max-h-[500px] h-auto mx-auto border-4 border-yellow-400 rounded-md overflow-hidden"
+            className="w-auto max-h-[500px] h-auto mx-auto border-4 border-white rounded-md overflow-hidden shadow-2xl shadow-purple-800"
           />
         )}
       </div>
       <div className="flex flex-wrap justify-between mt-5 gap-4">
         <button
           onClick={loadRandomMeme}
-          className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl flex-1 sm:flex-none sm:px-5 flex gap-2"
+          className="bg-gradient-to-r from-purple-500 to-teal-400 hover:opacity-75 p-2 px-5 border-4 border-white rounded-3xl text-xl flex-1 sm:flex-none sm:px-5 flex justify-center gap-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const MemeGeneratorComponent = () => {
         </button>
         <button
           onClick={downloadMeme}
-          className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl flex-1 sm:flex-none sm:px-5 flex gap-2"
+          className="bg-gradient-to-r from-purple-500 to-teal-400 hover:opacity-75 p-2 px-5 border-4 border-white rounded-3xl text-xl flex-1 sm:flex-none sm:px-5 flex justify-center gap-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ const MemeGeneratorComponent = () => {
         </button>
         <button
           onClick={tweetMeme}
-          className="hover:text-gray-50 bg-orange-400 hover:bg-yellow-800 p-2 px-5 rounded-3xl border-4 border-yellow-400 text-xl flex-1 sm:flex-none sm:px-5 flex gap-2"
+          className="bg-gradient-to-r from-purple-500 to-teal-400 hover:opacity-75 p-2 px-5 border-4 border-white rounded-3xl text-xl flex-1 sm:flex-none sm:px-5 flex justify-center gap-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

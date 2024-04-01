@@ -9,6 +9,7 @@ const myFont = localFont({ src: "./files/Insanibu.ttf" });
 export const metadata = {
   title: "Bird Dog",
   description: "Community builders of Bird Dog",
+  icon: '/birddog_gray.jpg', // /public path
 };
 
 export default function RootLayout({ children }) {
