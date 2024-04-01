@@ -9,13 +9,16 @@ const myFont = localFont({ src: "./files/Insanibu.ttf" });
 export const metadata = {
   title: "Bird Dog",
   description: "Community builders of Bird Dog",
-  icon: '/birddog_gray.jpg', // /public path
+  icons: {
+    icon: "/public/favicon.png"
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+      <link rel="icon" href="/public/favicon.png" sizes="any" />
       <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
