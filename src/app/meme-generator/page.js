@@ -5,7 +5,7 @@ import MemeGeneratorComponent from '../components/MemeGenerator';
 
 export default function MemeGenerator() {
   return (
-    <main className="flex flex-col items-center px-5 bg-black">
+    <main className="flex flex-col items-center px-5 bg-black text-white">
       <h1 className='text-5xl text-center mt-5'>Meme <spam className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">Generator</spam></h1>
       <MemeGeneratorComponent/>
     </main>

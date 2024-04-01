@@ -21,7 +21,7 @@ const myFont2 = localFont2({ src: "./files/ComicNeue-Bold.ttf" });
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-5 bg-black">
+    <main className="flex min-h-screen flex-col items-center justify-between px-5 bg-black text-white">
       <div className="mt-12">
         <Image src={text_bird} alt="Bird Dog text" priority />
       </div>
