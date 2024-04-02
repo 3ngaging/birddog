@@ -9,6 +9,7 @@ const memes = [
   "meme5.jpg",
   "meme6.jpg",
   "meme7.jpg",
+  "meme8.jpg",
 ];
 
 const MemeGeneratorComponent = () => {
