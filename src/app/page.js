@@ -62,7 +62,7 @@ export default function Home() {
             OUR <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">PARTNERS </span>
           </h2>
           <div className="mt-5 flex flex-wrap justify-center gap-5">
-            <a className="w-1/2 sm:w-auto" href="https://dexscreener.com/solana/dthr9wws7qvufswtabmbx7srpzejpjgdy6ctb631kpgf" target="_blank">
+            <a className=" sm:w-auto" href="https://dexscreener.com/solana/dthr9wws7qvufswtabmbx7srpzejpjgdy6ctb631kpgf" target="_blank">
               <Image
                 src={partner1}
                 alt="partner 1"
@@ -73,7 +73,7 @@ export default function Home() {
                 className="hover:opacity-80 cursor-pointer"
               />
             </a>
-            <a className="w-1/2 sm:w-auto" href="https://coinmarketcap.com/es/currencies/bird-dog/" target="_blank">
+            <a className=" sm:w-auto" href="https://coinmarketcap.com/es/currencies/bird-dog/" target="_blank">
               <Image
                 src={partner2}
                 alt="partner 2"
@@ -84,7 +84,7 @@ export default function Home() {
                 className="hover:opacity-80 cursor-pointer"
               />
             </a>
-            <a className="w-1/2 sm:w-auto" href="https://t.me/bonkbot_bot?start=ref_birddog" target="_blank">
+            <a className=" sm:w-auto" href="https://t.me/bonkbot_bot?start=ref_birddog" target="_blank">
               <Image
                 src={partner4}
                 alt="partner 4"
@@ -95,7 +95,7 @@ export default function Home() {
                 className="hover:opacity-80 cursor-pointer"
               />
             </a>
-            <a className="w-1/2 sm:w-auto" href="https://birdeye.so/token/J98NfYDZdZirkahW79nihciRjnGjhT6znCK1kAuZfeHM?chain=solana" target="_blank">
+            <a className=" sm:w-auto" href="https://birdeye.so/token/J98NfYDZdZirkahW79nihciRjnGjhT6znCK1kAuZfeHM?chain=solana" target="_blank">
               <Image
                 src={partner6}
                 alt="partner 6"
@@ -116,16 +116,16 @@ export default function Home() {
             Community Driven <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">$birddog</span>
           </h2>
           <div className={myFont2.className}>
-          <p className="mt-5 text-justify text-xl">
+          <p className="mt-5 lg:text-justify text-center text-xl px-10">
               {`- Community Driven`}
             </p>
-            <p className="mt-2 text-justify text-xl">
+            <p className="mt-2 lg:text-justify text-center text-xl px-10">
               {`- Old Dev replaced with Community Devs`}
             </p>
-            <p className="mt-2 text-justify text-xl">
+            <p className="mt-2 lg:text-justify text-center text-xl px-10">
               {`- Funded by Community`}
             </p>
-            <p className="mt-2 text-justify text-xl">
+            <p className="mt-2 lg:text-justify text-center text-xl px-10">
               {`- Grow Organically`}
             </p>
           </div>
@@ -149,8 +149,8 @@ export default function Home() {
           <h2 className="text-5xl text-center">
             <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">AVAILABLE </span>ON
           </h2>
-          <div className="mt-5 flex flex-wrap justify-center gap-5">
-            <a className="w-1/2 sm:w-auto" href="https://jup.ag/swap/SOL-BIRDDOG" target="_blank">
+          <div className="mt-5 flex flex-wrap justify-center gap-5 mb-10">
+            <a className=" sm:w-auto" href="https://jup.ag/swap/SOL-BIRDDOG" target="_blank">
               <Image
                 src={partner3}
                 alt="partner 3"
@@ -161,7 +161,7 @@ export default function Home() {
                 className="hover:opacity-80 cursor-pointer"
               />
             </a>
-            <a className="w-1/2 sm:w-auto" href="https://t.me/bonkbot_bot?start=ref_birddog" target="_blank">
+            <a className=" sm:w-auto" href="https://t.me/bonkbot_bot?start=ref_birddog" target="_blank">
               <Image
                 src={partner4}
                 alt="partner 4"
@@ -172,7 +172,7 @@ export default function Home() {
                 className="hover:opacity-80 cursor-pointer"
               />
             </a>
-            <a className="w-1/2 sm:w-auto" href="https://avedex.cc/token/3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP-solana?from=Default" target="_blank">
+            <a className=" sm:w-auto" href="https://avedex.cc/token/3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP-solana?from=Default" target="_blank">
               <Image
                 src={partner5}
                 alt="partner 5"

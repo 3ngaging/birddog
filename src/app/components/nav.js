@@ -117,11 +117,7 @@ const Nav = () => {
                     </Link>
                   </li>
                   <li
-                    className={
-                      isActive("/meme-generator")
-                        ? "bg-white text-black rounded-3xl text-white"
-                        : ""
-                    }
+                    className={isActive("/meme-generator") ? "bg-white text-black rounded-3xl" : "text-white"}
                   >
                     <Link
                       onClick={handleLinkClick}
