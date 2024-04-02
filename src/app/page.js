@@ -14,6 +14,7 @@ import text_bird from "./assets/BIRD DOG.svg";
 import localFont2 from "next/font/local";
 import ClipboardCopyComponent from "./components/clipboard";
 import drawImg from "./assets/draw.jpg";
+import wallpaper from "./assets/bd_wallpaper.png";
 // import { Tweet } from "react-tweet";
 
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
@@ -22,7 +23,8 @@ const myFont2 = localFont2({ src: "./files/ComicNeue-Bold.ttf" });
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-5 bg-black text-white">
-      <div className="mt-12">
+    <Image src={wallpaper} alt="Bird Dog logo" priority />
+      <div className="mt-5">
         <Image src={text_bird} alt="Bird Dog text" priority />
       </div>
       <Image src={bdImage} alt="Bird Dog logo" priority />
