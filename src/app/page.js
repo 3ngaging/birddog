@@ -57,10 +57,9 @@ export default function Home() {
       </div>
       <div className="px-4 sm:px-10 lg:px-32 mt-5 lg:mb-20 md:mb-12">
         {/* Container to control width */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-5xl text-center">
             OUR <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">PARTNERS </span>
-            AND <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">DEX</span>
           </h2>
           <div className="mt-5 flex flex-wrap justify-center gap-5">
             <a className="w-1/2 sm:w-auto" href="https://dexscreener.com/solana/dthr9wws7qvufswtabmbx7srpzejpjgdy6ctb631kpgf" target="_blank">
@@ -85,6 +84,72 @@ export default function Home() {
                 className="hover:opacity-80 cursor-pointer"
               />
             </a>
+            <a className="w-1/2 sm:w-auto" href="https://t.me/bonkbot_bot?start=ref_birddog" target="_blank">
+              <Image
+                src={partner4}
+                alt="partner 4"
+                width={350}
+                height={350}
+                layout="intrinsic"
+                priority
+                className="hover:opacity-80 cursor-pointer"
+              />
+            </a>
+            <a className="w-1/2 sm:w-auto" href="https://birdeye.so/token/J98NfYDZdZirkahW79nihciRjnGjhT6znCK1kAuZfeHM?chain=solana" target="_blank">
+              <Image
+                src={partner6}
+                alt="partner 6"
+                width={350}
+                height={350}
+                layout="intrinsic"
+                priority
+                className="hover:opacity-80 cursor-pointer"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="lg:px-32 sx:px-5 mt-10">
+        {/* Container to control width */}
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-5xl text-center">
+            Community Driven <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">$birddog</span>
+          </h2>
+          <div className={myFont2.className}>
+          <p className="mt-5 text-justify text-xl">
+              {`- Community Driven`}
+            </p>
+            <p className="mt-2 text-justify text-xl">
+              {`- Old Dev replaced with Community Devs`}
+            </p>
+            <p className="mt-2 text-justify text-xl">
+              {`- Funded by Community`}
+            </p>
+            <p className="mt-2 text-justify text-xl">
+              {`- Grow Organically`}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-4 md:px-32 mt-12 lg:mb-20 mb-12 flex flex-col items-center">
+        <div className="mb-5 flex justify-center">
+          <h4 className="text-2xl text-center">
+            <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">COMMUNITY MULTI SIG WALLET</span>
+          </h4>
+        </div>
+        <div className={`${myFont2.className} w-full max-w-md mx-auto`}>
+          <ClipboardCopyComponent />
+        </div>
+      </div>
+      
+      <div className="px-4 sm:px-10 lg:px-32 mt-5 lg:mb-20 md:mb-12">
+        {/* Container to control width */}
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-5xl text-center">
+            <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">AVAILABLE </span>ON
+          </h2>
+          <div className="mt-5 flex flex-wrap justify-center gap-5">
             <a className="w-1/2 sm:w-auto" href="https://jup.ag/swap/SOL-BIRDDOG" target="_blank">
               <Image
                 src={partner3}
@@ -118,56 +183,7 @@ export default function Home() {
                 className="hover:opacity-80 cursor-pointer"
               />
             </a>
-            <a className="w-1/2 sm:w-auto" href="https://birdeye.so/token/J98NfYDZdZirkahW79nihciRjnGjhT6znCK1kAuZfeHM?chain=solana" target="_blank">
-              <Image
-                src={partner6}
-                alt="partner 6"
-                width={350}
-                height={350}
-                layout="intrinsic"
-                priority
-                className="hover:opacity-80 cursor-pointer"
-              />
-            </a>
           </div>
-        </div>
-      </div>
-
-      <div className="lg:px-32 sx:px-5 mt-10 lg:mb-20 mb-12">
-        {/* Container to control width */}
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-5xl text-center">
-            Community Driven <span className="from-purple-500 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent">$birddog</span>
-          </h2>
-          <div className={myFont2.className}>
-            <p className="mt-5 text-justify">
-              {`The $BIRDDOG token, emerging resiliently from the shadows of a
-        developer rug pull, has been fervently embraced by its community,
-        now driving its trajectory with unwavering commitment and vision.
-        This digital asset, now entirely in the hands of its dedicated
-        holders, symbolizes the power of collective belief and action,
-        showcasing a remarkable turnaround to become 100% community-led
-        and thriving against all odds. Through collaborative effort and
-        shared governance, the $BIRDDOG community exemplifies the strength
-        and potential of decentralized finance when united by a common
-        purpose and trust.`}
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="px-4 md:px-32 mt-5 lg:mb-20 mb-12 flex flex-col items-center">
-        <div className="mb-5 flex justify-center">
-          <Image
-            src={gif1}
-            alt="Bird Dog logo"
-            width={300}
-            height={300}
-            priority
-          />
-        </div>
-        <div className={`${myFont2.className} w-full max-w-md mx-auto`}>
-          <ClipboardCopyComponent />
         </div>
       </div>
 

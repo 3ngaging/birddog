@@ -6,7 +6,7 @@ export default function ClipboardCopyComponent() {
 
   const handleCopyClick = () => {
     navigator.clipboard
-      .writeText("3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP")
+      .writeText("4mTyCE6nfZfbWuHdCYmQYtQwKUmNGkXWKoGem38tofEt")
       .then(() => {
         setCopySuccess(true);
         setTimeout(() => setCopySuccess(false), 2000); // Reset tooltip message after 2 seconds
@@ -25,7 +25,7 @@ export default function ClipboardCopyComponent() {
           id="npm-install-copy-button"
           type="text"
           className="text-center col-span-6 border-4 bg-gradient-to-r from-purple-500 to-teal-400 text-white text-md rounded-3xl  block w-full p-2.5  placeholder-white"
-          value="3XTp12PmKMH...gJuVTsBCoP"
+          value="4mTyCE6nfZf...Gem38tofEt"
           disabled
           readOnly
         />
