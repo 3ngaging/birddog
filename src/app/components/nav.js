@@ -23,7 +23,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-stone-950 sticky top-0 p-5 text-white">
+    <nav className="bg-stone-950 sticky top-0 p-5 text-white z-50">
       <div className="">
         {/* Burger Icon */}
         <div className="md:hidden flex justify-between">
