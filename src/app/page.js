@@ -97,7 +97,7 @@ export default function Home() {
                 className="hover:opacity-80 cursor-pointer"
               />
             </a>
-            <a className=" sm:w-auto" href="https://birdeye.so/token/J98NfYDZdZirkahW79nihciRjnGjhT6znCK1kAuZfeHM?chain=solana" target="_blank">
+            <a className=" sm:w-auto" href="https://birdeye.so/token/3XTp12PmKMHxB6YkejaGPUjMGBLKRGgzHWgJuVTsBCoP?chain=solana" target="_blank">
               <Image
                 src={partner6}
                 alt="partner 6"
