@@ -108,6 +108,17 @@ export default function Home() {
                 className="hover:opacity-80 cursor-pointer"
               />
             </a>
+            <a className=" sm:w-auto" href="https://www.dextools.io/app/en/solana/pair-explorer/DThR9WwS7qVUFswtabmbX7SRPZejpJgdy6CTB631kpgF?t=1715002937938" target="_blank">
+              <Image
+                src="https://www.dextools.io/app/assets/img/logo/dextools_logo_full_dark.svg"
+                alt="partner 7"
+                width={350}
+                height={350}
+                layout="intrinsic"
+                priority
+                className="hover:opacity-80 cursor-pointer"
+              />
+            </a>
           </div>
         </div>
       </div>
