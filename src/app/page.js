@@ -13,7 +13,7 @@ import maps from "./assets/maps.svg";
 import text_bird from "./assets/BIRD DOG.svg";
 import localFont2 from "next/font/local";
 import ClipboardCopyComponent from "./components/clipboard";
-import drawImg from "./assets/charbanner.jpg";
+import drawImg from "./assets/draw.jpg";
 import wallpaper from "./assets/bd_wallpaper.png";
 // import { Tweet } from "react-tweet";
 
